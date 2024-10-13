@@ -9,6 +9,8 @@
  * (at your option) any later version.
  */
 
+#define _XOPEN_SOURCE
+#define _GNU_SOURCE
 #include <ctype.h>           /* for isspace */
 #include <errno.h>           /* for errno */
 #include <stdio.h>
@@ -24,7 +26,7 @@
 #include "dpiutil.h"
 #include "d_size.h"
 #include "fileutil.h"
-
+#include "time.h"
 /*
  * Debugging macros
  */
