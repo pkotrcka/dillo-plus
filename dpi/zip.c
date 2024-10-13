@@ -14,7 +14,8 @@
  * Directory entries on top, files next.
  * With new HTML layout.
  */
-
+#define _XOPEN_SOURCE
+#define _GNU_SOURCE
 #include <ctype.h>           /* for isspace */
 #include <errno.h>           /* for errno */
 #include <stdio.h>
@@ -36,7 +37,6 @@
 #include "dpiutil.h"
 #include "d_size.h"
 #include "fileutil.h"
-
 /*
  * Debugging macros
  */
